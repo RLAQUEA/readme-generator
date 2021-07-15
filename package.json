@@ -1,0 +1,25 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "This is a node application that generates a readme after user is prompted for input",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RLAQUEA/readme-generator.git"
+  },
+  "keywords": [
+    "readme"
+  ],
+  "author": "Rachel LaQuea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RLAQUEA/readme-generator/issues"
+  },
+  "homepage": "https://github.com/RLAQUEA/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  }
+}
