@@ -15,13 +15,13 @@ function generateMarkdown(data) {
 # ${data.title}
 ${licenseBadge(data.licenses)}
 ## Table of Contents:
-[Licenses](#licenses)
-[Licenses](#licenses)
-[Licenses](#licenses)
-[Licenses](#licenses)
-[Licenses](#licenses)
-[Licenses](#licenses)
-[Licenses](#licenses)
+* [Licenses](#licenses)
+* [Github](#github)
+* [Email](#email)
+* [Title](#title)
+* [Description](#description)
+* [Installation](#installation)
+* [Tests](#tests)
 ## User Github:
 ${data.github}
 ## User Email:
