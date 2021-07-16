@@ -35,12 +35,12 @@ const getUserInfo = () => {
         },
         {
             type: 'input',
-            name: 'Usage',
+            name: 'usage',
             message: 'Usage:'
         },
         {
             type: 'input',
-            name: 'contributing',
+            name: 'contributors',
             message: 'Contributors:'
         },
         {
@@ -50,7 +50,7 @@ const getUserInfo = () => {
         },
         {
             type: 'list',
-            name: 'Licenses:',
+            name: 'licenses',
             choices: ['Licenses: MIT License (MIT)', 'IBM Public License 1.0', 'APACHE License']
         },
     ]) .then(function (data) {
@@ -73,7 +73,7 @@ function makeReadme(data) {
  
 //Function that will retrieve and display license badges on the readme file
 let badge;
-    switch (data.license) {
+    switch (data.licenses) {
         case "none":
             badge = ""
             break;
@@ -88,12 +88,16 @@ let badge;
             break;
     }
 
-    return `# ${data.type}
-    ## ${data.name}
-    ### ${data.message}
-    # ${data.choices}
-`
-  
+    return `###${data.github}
+    ### ${data.email}
+    # ${data.title}
+    ## ${data.description}
+    ## ${data.installation}
+    ${data.usage}
+    ${data.contributors}
+    ${data.tests}
+    ${data.licenses}
+    `
 }
 
 // module.exports = generateMarkdown;
