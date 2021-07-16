@@ -56,13 +56,22 @@ const getUserInfo = () => {
     ])
 }
 
-function writeFile(fileName, data) {
-    
 
+function makeReadme(fileName, data) {
+    const fileName = fs.writeFileSync("./readme.md")
+    return `# ${data.title}
+  
+    `;
+    }
 getUserInfo()
     .then(function (data) {
-        let makeFile = writeFile(data)
+        let makeFile = makeReadme(data)
     })
     .then(function () {
         console.log("Success!");
     })
+
+makeReadme();
+  
+module.exports = generateMarkdown;
+  
