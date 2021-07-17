@@ -1,5 +1,5 @@
  
-# dl
+# Readme Generator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 ## Table of Contents:
 * [Licenses](#licenses)
@@ -10,18 +10,18 @@
 * [Installation](#installation)
 * [Tests](#tests)
 ## User Github:
-rl
+rlaquea
 ## User Email:
-<a href="sl">sl</a>
+<a href="rlaquea14@gmail.com">rlaquea14@gmail.com</a>
 ## Project Description:
-dl
+This is a node application that will generate a readme file for the user
 ## Installation:
-ksk
+node.js inquirer package
 ## Usage:
-jj
+node npm inquirer
 ## Contributors:
-mm
+Rachel LaQuea
 ## Tests:
-sm
+npm run test
 ## Licenses:
 Licenses: MIT License (MIT)
